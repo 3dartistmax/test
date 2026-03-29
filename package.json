@@ -1,0 +1,163 @@
+export interface Post {
+  id: number;
+  title: {
+    en: string;
+    de: string;
+    ne: string;
+  };
+  excerpt: {
+    en: string;
+    de: string;
+    ne: string;
+  };
+  content: {
+    en: string;
+    de: string;
+    ne: string;
+  };
+  date: string;
+  image: string;
+  author: string;
+  readTime: string;
+}
+
+export const posts: Post[] = [
+  {
+    id: 1,
+    title: {
+      en: 'The Art of Simplicity',
+      de: 'Die Kunst der Einfachheit',
+      ne: 'सरलताको कला'
+    },
+    excerpt: {
+      en: 'Exploring how minimalist design can improve our daily digital interactions.',
+      de: 'Untersuchung, wie minimalistisches Design unsere täglichen digitalen Interaktionen verbessern kann.',
+      ne: 'न्यूनतम डिजाइनले हाम्रो दैनिक डिजिटल अन्तरक्रियालाई कसरी सुधार गर्न सक्छ भन्ने अन्वेषण।'
+    },
+    content: {
+      en: `Simplicity is not just about the absence of clutter. It's a philosophy that prioritizes clarity and purpose. In digital design, this means removing distractions so the user can focus on what truly matters.
+
+      Minimalist design often relies on:
+      - Generous whitespace
+      - Strong typography
+      - Limited color palettes
+      - Functional elements only
+      
+      By embracing these principles, we create experiences that are not only beautiful but also highly usable.`,
+      de: `Einfachheit bedeutet nicht nur die Abwesenheit von Unordnung. Es ist eine Philosophie, die Klarheit und Zweckmäßigkeit in den Vordergrund stellt. Im digitalen Design bedeutet dies, Ablenkungen zu entfernen, damit sich der Benutzer auf das konzentrieren kann, was wirklich wichtig ist.
+
+      Minimalistisches Design stützt sich oft auf:
+      - Großzügigen Weißraum
+      - Starke Typografie
+      - Begrenzte Farbpaletten
+      - Nur funktionale Elemente
+      
+      Indem wir diese Prinzipien annehmen, schaffen wir Erlebnisse, die nicht nur schön, sondern auch hochgradig nutzbar sind.`,
+      ne: `सरलता भनेको अव्यवस्थाको अनुपस्थिति मात्र होइन। यो एक दर्शन हो जसले स्पष्टता र उद्देश्यलाई प्राथमिकता दिन्छ। डिजिटल डिजाइनमा, यसको अर्थ प्रयोगकर्ताले वास्तवमै महत्त्वपूर्ण कुरामा ध्यान केन्द्रित गर्न सकून् भनेर अवरोधहरू हटाउनु हो।
+
+      न्यूनतम डिजाइन अक्सर निम्नमा निर्भर गर्दछ:
+      - प्रशस्त सेतो ठाउँ (Whitespace)
+      - बलियो टाइपोग्राफी
+      - सीमित रङ प्यालेटहरू
+      - कार्यात्मक तत्वहरू मात्र
+      
+      यी सिद्धान्तहरूलाई आत्मसात गरेर, हामी अनुभवहरू सिर्जना गर्छौं जुन सुन्दर मात्र होइन तर उच्च प्रयोगयोग्य पनि छन्।`
+    },
+    date: 'March 24, 2026',
+    image: 'https://picsum.photos/seed/minimal/1200/600',
+    author: 'Max Mustermann',
+    readTime: '5 min'
+  },
+  {
+    id: 2,
+    title: {
+      en: 'Future of Multilingual Web',
+      de: 'Zukunft des mehrsprachigen Webs',
+      ne: 'बहुभाषी वेबको भविष्य'
+    },
+    excerpt: {
+      en: 'Breaking language barriers through intelligent localization and AI.',
+      de: 'Sprachbarrieren durch intelligente Lokalisierung und KI überwinden.',
+      ne: 'बौद्धिक स्थानीयकरण र एआई मार्फत भाषा अवरोधहरू तोड्दै।'
+    },
+    content: {
+      en: `The web is becoming increasingly global. Localizing content is no longer an afterthought; it's a necessity. With advancements in AI and translation APIs, building multilingual sites is easier than ever.
+
+      Key considerations for multilingual sites:
+      - RTL (Right-to-Left) support
+      - Dynamic font loading for different scripts
+      - Cultural nuances in imagery and color
+      - SEO for localized content
+      
+      The future belongs to a web where language is no longer a barrier to information.`,
+      de: `Das Web wird zunehmend globaler. Die Lokalisierung von Inhalten ist kein nachträglicher Einfall mehr, sondern eine Notwendigkeit. Mit Fortschritten in KI und Übersetzungs-APIs ist der Aufbau mehrsprachiger Websites einfacher denn je.
+
+      Wichtige Überlegungen für mehrsprachige Websites:
+      - RTL-Unterstützung (Rechts-nach-Links)
+      - Dynamisches Laden von Schriftarten für verschiedene Skripte
+      - Kulturelle Nuancen in Bildsprache und Farbe
+      - SEO für lokalisierte Inhalte
+      
+      Die Zukunft gehört einem Web, in dem Sprache kein Hindernis mehr für Informationen ist.`,
+      ne: `वेब बढ्दो रूपमा विश्वव्यापी हुँदैछ। सामग्रीको स्थानीयकरण अब पछिको विचार होइन; यो एक आवश्यकता हो। एआई र अनुवाद एपीआईहरूमा भएको प्रगतिको साथ, बहुभाषी साइटहरू निर्माण गर्न पहिले भन्दा सजिलो छ।
+
+      बहुभाषी साइटहरूको लागि मुख्य विचारहरू:
+      - RTL (दायाँ-देखि-बायाँ) समर्थन
+      - विभिन्न लिपिहरूको लागि गतिशील फन्ट लोडिङ
+      - चित्रण र रङमा सांस्कृतिक सूक्ष्मताहरू
+      - स्थानीयकृत सामग्रीको लागि SEO
+      
+      भविष्य यस्तो वेबको हो जहाँ भाषा अब जानकारीको लागि बाधा हुनेछैन।`
+    },
+    date: 'March 15, 2026',
+    image: 'https://picsum.photos/seed/web/1200/600',
+    author: 'Max Mustermann',
+    readTime: '7 min'
+  },
+  {
+    id: 3,
+    title: {
+      en: 'Typography in Modern UI',
+      de: 'Typografie in moderner Benutzeroberfläche',
+      ne: 'आधुनिक UI मा टाइपोग्राफी'
+    },
+    excerpt: {
+      en: 'Why font selection is the most critical part of your design system.',
+      de: 'Warum die Schriftauswahl der wichtigste Teil Ihres Designsystems ist.',
+      ne: 'किन फन्ट चयन तपाईंको डिजाइन प्रणालीको सबैभन्दा महत्त्वपूर्ण भाग हो।'
+    },
+    content: {
+      en: `Typography is the voice of your design. It conveys tone, hierarchy, and personality. In a world of infinite scrolling, good typography keeps users engaged.
+
+      Why typography matters:
+      - Readability and legibility
+      - Establishing visual hierarchy
+      - Brand recognition
+      - Emotional impact
+      
+      Never underestimate the power of a well-chosen typeface.`,
+      de: `Typografie ist die Stimme Ihres Designs. Sie vermittelt Tonfall, Hierarchie und Persönlichkeit. In einer Welt des unendlichen Scrollens hält gute Typografie die Benutzer bei der Stange.
+
+      Warum Typografie wichtig ist:
+      - Lesbarkeit und Deutlichkeit
+      - Etablierung visueller Hierarchie
+      - Markenwiedererkennung
+      - Emotionale Wirkung
+      
+      Unterschätzen Sie niemals die Macht einer gut gewählten Schriftart.`,
+      ne: `टाइपोग्राफी तपाईंको डिजाइनको आवाज हो। यसले टोन, पदानुक्रम र व्यक्तित्व व्यक्त गर्दछ। अनन्त स्क्रोलिङको संसारमा, राम्रो टाइपोग्राफीले प्रयोगकर्ताहरूलाई व्यस्त राख्छ।
+
+      टाइपोग्राफी किन महत्त्वपूर्ण छ:
+      - पढ्न योग्यता र स्पष्टता
+      - दृश्य पदानुक्रम स्थापना गर्दै
+      - ब्रान्ड पहिचान
+      - भावनात्मक प्रभाव
+      
+      राम्रोसँग छानिएको टाइपफेसको शक्तिलाई कहिल्यै कम नठान्नुहोस्।`
+    },
+    date: 'March 08, 2026',
+    image: 'https://picsum.photos/seed/type/1200/600',
+    author: 'Max Mustermann',
+    readTime: '4 min'
+  }
+];
